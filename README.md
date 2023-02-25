@@ -16,6 +16,9 @@ Scroll down for English
 
 Для работы с 3DGAN используйте файл из директории ./fit
 
+Вы можете посмотреть на демонстрацию результатов работы 3DGAN по ссылке:
+http://185.251.90.91:8501/
+
 Этот проект опирается на данные из открытых источников, в частности:
 1. The Cambridge Structural Database, C. R. Groom, I. J. Bruno, M. P. Lightfoot and S. C. Ward, Acta Cryst. (2016). B72, 171-179, DOI: 10.1107/S2052520616003954
 2. Siderius, D.W., Shen, V.K., Johnson III, R.D. and van Zee, R.D., Eds., NIST/ARPA-E Database of Novel and Emerging Adsorbent Materials, National Institute of Standards and Technology, Gaithersburg MD, 20899, https://dx.doi.org/10.18434/T43882
@@ -33,15 +36,16 @@ The adsorption properties were evaluated using the Freundlich isotherm.
 
 To create MOF, a generative adversarial neural network (GAN) was written that works with objects in three-dimensional space (3DGAN).
 
-
 You can generate an energy landscape yourself if you have a connection CIF file. To do this, use the file ./create_dataset/convert_dataset_for_fit.ipynb
 As a result, you should get an energy landscape, which can be represented as a .png file similar to one of the examples:
 ![example](./examples/1.png)
 
 To work with 3DGAN, use the file from the ./fit directory
 
-This project relies on data from open sources, in particular:
+You can see the 3DGAN at work here:
+http://185.251.90.91:8501/
 
+This project relies on data from open sources, in particular:
 Этот проект опирается на данные из открытых источников, в частности:
 1. The Cambridge Structural Database, C. R. Groom, I. J. Bruno, M. P. Lightfoot and S. C. Ward, Acta Cryst. (2016). B72, 171-179, DOI: 10.1107/S2052520616003954
 2. Siderius, D.W., Shen, V.K., Johnson III, R.D. and van Zee, R.D., Eds., NIST/ARPA-E Database of Novel and Emerging Adsorbent Materials, National Institute of Standards and Technology, Gaithersburg MD, 20899, https://dx.doi.org/10.18434/T43882
@@ -57,7 +61,10 @@ N. Scott Bobbitt, Kaihang Shi, Benjamin J. Bucior, Haoyuan Chen, Nathaniel Tracy
 # LICENSE
 
 Данная работа распространяется по лицензии Creative Commons Attribution 4.0 International License (CC BY 4.0) https://creativecommons.org/licenses/by/4.0/
+
 This work is licensed under a Creative Commons Attribution 4.0 International License (CC BY 4.0) https://creativecommons.org/licenses/by/4.0/
 
+
 Данные из датасета, а также полученные энергетические ландшафты распространяются свободно (CC0)
+
 Dataset data and energy landcapes are public domain data (CC0)
