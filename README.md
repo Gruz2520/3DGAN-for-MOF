@@ -1,6 +1,18 @@
 # 3DGAN-for-MOF
 
-3DGAN для генерации металло-органических каркасов со свойствами адсорбции газов. В репозитории хранится все алгоритмы парсинга\обработки датасета, алгоритмы архитектуры модели и ее обучения. В нем же есть датасет, содержащий информацию об МОК.
+Данный проект был создан для исследования возможности автоматической генерации металл-органических каркасов (МОК) с заданными адсорбционными свойствами.
+
+В качестве описательного инструмента был выбран энергетический ландшафт, получаемый наложением двухчастичного потенциала Леннарда-Джонса на трёхмерную ячейку моделирования с периодическими граничными условиями.
+
+Адсорбционные свойства оценивались при помощи изотермы Френдлиха.
+
+Для создания МОК была написана генеративно-состязательная нейронная сеть (GAN), использующая трёхмерную свёртку (3DGAN).
+
+Вы можете самостоятельно сгенерировать энергетический ландшафт при наличии у вас CIF-файла соединения. Для этого воспользуйтесь файлом ./create_dataset/convert_dataset_for_fit.ipynb
+В результате у Вас должен получиться энергетический ландшафт, который можно представить в виде .png-файла, похожего на один из примеров:
+![example](./examples/0.png)
+
+Для работы с 3DGAN используйте файл из директории ./fit
 
 Этот проект опирается на данные из открытых источников, в частности:
 1. The Cambridge Structural Database, C. R. Groom, I. J. Bruno, M. P. Lightfoot and S. C. Ward, Acta Cryst. (2016). B72, 171-179, DOI: 10.1107/S2052520616003954
@@ -8,7 +20,6 @@
 3. MOFX-DB: An Online Database of Computational Adsorption Data for Nanoporous Materials
 N. Scott Bobbitt, Kaihang Shi, Benjamin J. Bucior, Haoyuan Chen, Nathaniel Tracy-Amoroso, Zhao Li, Yangzesheng Sun, Julia H. Merlin, J. Ilja Siepmann, Daniel W. Siderius, and Randall Q. Snurr, Journal of Chemical & Engineering Data 2023 68 (2), 483-498, DOI: 10.1021/acs.jced.2c00583 
 4. Anubhav Jain, Shyue Ping Ong, Geoffroy Hautier, Wei Chen, William Davidson Richards, Stephen Dacek, Shreyas Cholia, Dan Gunter, David Skinner, Gerbrand Ceder, and Kristin A. Persson , "Commentary: The Materials Project: A materials genome approach to accelerating materials innovation", APL Materials 1, 011002 (2013) https://doi.org/10.1063/1.4812323
-
 
 LICENSE
 
